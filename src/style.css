@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-default: "Noto Sans TC", sans-serif;
+
+  /* Color System */
+  --color-primary-10: #F3EEEC;
+  --color-primary-40: #CBB6AF;
+  --color-primary-60: #A37F71;
+  --color-primary-80: #886658;
+  --color-primary-100: #4A3830;
+  --color-primary-120: #2B211C;
+
+  --color-success-10: #F0FCD1;
+  --color-success-20: #DDFAA5;
+  --color-success-100: #7CD31F;
+  --color-success-120: #48970F;
+
+  --color-info-10: #D4F9FE;
+  --color-info-20: #A9EFFE;
+  --color-info-100: #2AAFFC;
+  --color-info-120: #1566B5;
+
+  --color-alert-10: #FFE0D7;
+  --color-alert-20: #FFBBB0;
+  --color-alert-100: #FF553A;
+  --color-alert-120: #B71D4F;
+
+  --color-nertral-10: #F9F9F9;
+  --color-nertral-15: #F4F4F4;
+  --color-nertral-40: #ECECEC;
+  --color-nertral-60: #909090;
+  --color-nertral-80: #4B4B4B
+
+  /* custom letter spacing */
+  --tracking-main: 0.02em;
+}
+
+@layer base {
+  :root {
+    --font-family-default: var(--font-default); /* 暴露給 html 使用 */
+  }
+
+  html {
+    font-family: var(--font-family-default);
+    letter-spacing: var(--tracking-main);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold leading-tight;
+  }
+
+}
+
+@components {}
+
+/* @utility card {} */
