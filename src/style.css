@@ -41,7 +41,7 @@
   :root {
     --font-family-default: var(--font-default); /* 暴露給 html 使用 */
   }
-
+  
   html {
     font-family: var(--font-family-default);
     letter-spacing: var(--tracking-main);
