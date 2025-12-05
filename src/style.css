@@ -40,11 +40,16 @@
 @layer base {
   :root {
     --font-family-default: var(--font-default); /* 暴露給 html 使用 */
+    --text-3xl: 2rem;
+    --leading-tight: 1.2;
+  }
+
+  *, *::before, *::after {
+    letter-spacing: 0.02em;
   }
   
-  html {
+  html, body {
     font-family: var(--font-family-default);
-    letter-spacing: var(--tracking-main);
   }
 
   h1,
